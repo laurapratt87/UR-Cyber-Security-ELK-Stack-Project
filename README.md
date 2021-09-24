@@ -10,7 +10,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 /etc/ansible/ELK_Playbook.yml
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -36,15 +36,9 @@ The configuration details of each machine may be found below. Note: Use the Mark
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-
-Name	Function	IP Address	Operating System
-RedTeam VM	Gateway	10.0.0.4	Linux
-Web-1	Server	10.0.0.7	Linux
-Web-2	Server	10.0.0.6	Linux
-ELK	Server	10.2.0.4	Linux
+| Web-1    | Server   | 10.0.0.7   | Linux            |
+| Web-2    | Server   | 10.0.0.6   | Linux            |
+| ELK      | Server   | 10.2.0.4   | Linux            |
 
 ### Access Policies
 
@@ -58,17 +52,12 @@ Jumpbox VM: IP 10.0.0.4 Local Workstation via SSH IP 100.7.126.87
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
-
-Name	Publicly Accessible	Allowed IP Addresses
-RedTeam VM	Yes	100.7.126.87
-Web-1	No	10.0.0.7
-Web-2	No	10.0.0.6
-ELK	No	100.7.126.87, 10.2.0.4
+|   Name   | Publicly Accessible | Allowed IP Addresses  |
+|----------|---------------------|-----------------------|
+| Jump Box |        No           |      100.7.126.87     |
+|   Web-1  |        No           | 10.0.0.7 100.7.126.87 |
+|   Web-2  |        No           | 10.0.0.6 100.7.126.87 |
+|Elk-Server|        No           | 10.2.0.4 100.7.126.87 |
 
 
 ### Elk Configuration
