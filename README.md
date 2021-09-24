@@ -66,15 +66,16 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 
-Install docker.io
-name: Install docker.io apt: update_cache: yes name: docker.io state: present
-Install Python-pip
-name: Install pip3 apt: force_apt_get: yes name: python3-pip state: present
-Install: docker
-name: Install Docker python module pip: name: docker state: present
-Command: sysctl -w vm.max_map_count=262144
-Launch docker container: elk
-name: download and launch a docker elk container docker_container: name: elk image: sebp/elk:761 state: started restart_policy: always published_ports: - 5601:5601 - 9200:9200 - 5044:5044
+- Install docker.io
+- name: Install docker.io apt: update_cache: yes name: docker.io state: present
+- Install Python-pip
+- name: Install pip3 apt: force_apt_get: yes name: python3-pip state: present
+- Install: docker
+- name: Install Docker python module pip: name: docker state: present
+- Command: sysctl -w vm.max_map_count=262144
+- Launch docker container: elk
+- name: download and launch a docker elk container docker_container: name: elk image: sebp/elk:761 state: started restart_policy: always published_ports: - - 5601:5601 - 9200:9200 - 5044:5044
+
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
 Diagrams/dockerps.PNG
@@ -83,13 +84,13 @@ Diagrams/dockerps.PNG
 
 This ELK server is configured to monitor the following machines:
 
-Web-1 10.0.0.7
+- Web-1 10.0.0.7
 
-Web-2 10.0.0.6
+- Web-2 10.0.0.6
 
 We have installed the following Beats on these machines:
 
-Filebeat and Metricbeat
+- Filebeat and Metricbeat
 
 These Beats allow us to collect the following information from each machine:
 
@@ -105,10 +106,10 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 
-Copy the playbook file to /etc/ansible .
-Update the host file to include...
-Run the playbook, and navigate to command line to check that the installation worked as expected.
-Playbook: install-elk.yml Location: /etc/ansible/install-elk.yml
+- Copy the playbook file to /etc/ansible .
+- Update the host file to include...
+- Run the playbook, and navigate to command line to check that the installation worked as expected.
+- Playbook: install-elk.yml Location: /etc/ansible/install-elk.yml
 
 You would need to edit the /etc/ansible/host file to add webserver/elkserver ip addresses
 
@@ -116,12 +117,12 @@ You would need to edit the /etc/ansible/host file to add webserver/elkserver ip 
 
 [webservers]
 
-10.0.0.7 ansible_python_interpreter=/usr/bin/python3
+- 10.0.0.7 ansible_python_interpreter=/usr/bin/python3
 
-10.0.0.6 ansible_python_interpreter=/usr/bin/python3
+- 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
 
 [elk]
 
-10.2.0.4 ansible_python_interpreter=/usr/bin/python3
+- 10.2.0.4 ansible_python_interpreter=/usr/bin/python3
 
 As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
