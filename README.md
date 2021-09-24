@@ -47,6 +47,7 @@ Web-2	Server	10.0.0.6	Linux
 ELK	Server	10.2.0.4	Linux
 
 ###Access Policies
+
 The machines on the internal network are not exposed to the public Internet. Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
 My home IP address (100.7.126.87)
@@ -71,6 +72,7 @@ ELK	No	100.7.126.87, 10.2.0.4
 
 
 ###Elk Configuration
+
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because the main advantage is that you can put commands into multiple servers from a single playbook, like how I combined Filebeat and Metricbeat.
 
 The playbook implements the following tasks:
@@ -89,6 +91,7 @@ The following screenshot displays the result of running docker ps after successf
 Diagrams/dockerps.PNG
 
 ###Target Machines & Beats
+
 This ELK server is configured to monitor the following machines:
 
 Web-1 10.0.0.7
@@ -107,7 +110,8 @@ Diagrams/FileBeat.PNG
 Metricbeat collects metrics and statistics
 Diagrams/MetricBeat.PNG
 
-Using the Playbook
+###Using the Playbook
+
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
 
 SSH into the control node and follow the steps below:
@@ -131,4 +135,4 @@ You would need to edit the /etc/ansible/host file to add webserver/elkserver ip 
 
 10.2.0.4 ansible_python_interpreter=/usr/bin/python3
 
-As a Bonus, provide the specific commands the user will need to run to download the playbook, update the files, etc.
+As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
