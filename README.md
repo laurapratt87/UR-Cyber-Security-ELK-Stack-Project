@@ -55,9 +55,9 @@ A summary of the access policies in place can be found in the table below.
 |   Name   | Publicly Accessible | Allowed IP Addresses  |
 |----------|---------------------|-----------------------|
 | Jump Box |        No           |      100.7.126.87     |
-|   Web-1  |        No           | 10.0.0.7 100.7.126.87 |
-|   Web-2  |        No           | 10.0.0.6 100.7.126.87 |
-|Elk-Server|        No           | 10.2.0.4 100.7.126.87 |
+|   Web-1  |        No           |10.0.0.7 & 100.7.126.87|
+|   Web-2  |        No           |10.0.0.6 & 100.7.126.87|
+|Elk-Server|        No           |10.2.0.4 & 100.7.126.87|
 
 
 ### Elk Configuration
