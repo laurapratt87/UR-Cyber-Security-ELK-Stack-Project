@@ -94,10 +94,10 @@ We have installed the following Beats on these machines:
 
 These Beats allow us to collect the following information from each machine:
 
-Filebeat collects the changes done
+- Filebeat collects the changes done
 Diagrams/FileBeat.PNG
 
-Metricbeat collects metrics and statistics
+- Metricbeat collects metrics and statistics
 Diagrams/MetricBeat.PNG
 
 ### Using the Playbook
