@@ -35,10 +35,10 @@ The configuration details of each machine may be found below. Note: Use the Mark
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
+| Jump Box | Gateway  | 10.0.0.8   | Linux            |
 | Web-1    | Server   | 10.0.0.7   | Linux            |
 | Web-2    | Server   | 10.0.0.6   | Linux            |
-| ELK      | Server   | 10.2.0.4   | Linux            |
+|ELK-server| Server   | 10.2.0.4   | Linux            |
 
 ### Access Policies
 
@@ -48,7 +48,7 @@ My home IP address (100.7.126.87)
 
 Machines within the network can only be accessed by Local workstation and Jumpbox.
 
-Jumpbox VM: IP 10.0.0.4 Local Workstation via SSH IP 100.7.126.87
+Jumpbox VM: IP 10.0.0.8 Local Workstation via SSH IP 100.7.126.87
 
 A summary of the access policies in place can be found in the table below.
 
@@ -57,7 +57,7 @@ A summary of the access policies in place can be found in the table below.
 | Jump Box |        No           |      100.7.126.87     |
 |   Web-1  |        No           |10.0.0.7 & 100.7.126.87|
 |   Web-2  |        No           |10.0.0.6 & 100.7.126.87|
-|Elk-Server|        No           |10.2.0.4 & 100.7.126.87|
+|ELK-Server|        No           |10.2.0.4 & 100.7.126.87|
 
 
 ### Elk Configuration
