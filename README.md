@@ -47,7 +47,7 @@ My home IP address (100.7.126.87)
 
 Machines within the network can only be accessed by Local workstation and Jumpbox.
 
-The Jumpbox VW was allowed access to the ELK VM.
+The Jumpbox VM was allowed access to the ELK VM.
 Jumpbox VM: IP 10.0.0.8 Local Workstation via SSH IP 100.7.126.87
 
 A summary of the access policies in place can be found in the table below.
@@ -62,7 +62,7 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. The playbook, much like the ones for Filebear and Metricbeat, saved time by not haivng to manually configure the machine.  
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because the playbook, much like the ones for Filebear and Metricbeat, saved time and remove [some] elements of human error.  
 
 The playbook implements the following tasks:
 
