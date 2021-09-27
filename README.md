@@ -1,6 +1,7 @@
 # UR-Cyber-Security-ELK-Stack-Project
 
-Automated ELK Stack Deployment
+##Automated ELK Stack Deployment
+
 The files in this repository were used to configure the network depicted below.
 
 Diagrams/RedTeamVMDiagram.PNG
@@ -17,9 +18,11 @@ This document contains the following details:
   - Machines Being Monitored
 - How to Use the Ansible Build
 
+###Description of the Topology
+
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly efficient, improves application responsiveness, also increases availability of applications and websites for users. In addition to restricting traffic to the network.
+Load balancing ensures that the application will be highly efficient, in addition to restricting access to the network.
 
 The off-loading function of a load balancer defends an organization against distributed denial-of-service (DDoS) attacks by shifting attack traffic. It does this by shifting attack traffic from the corporate server to a public cloud provider.
 
@@ -27,11 +30,9 @@ A jump box can give access to the user from a single node that can be secured an
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system metrics and statistics.
 
-Filebeat watches for any information in the file system which has been changed and when it has. Filebeat shipper for forwarding and centralizing log data.
+Filebeat collects data about the file system. Metricbeat collects machine metrics, such as uptime. 
 
-Merticbeat takes the metrics and statistics that it collects and ships them to the output that you specify. Metricbeat helps you monitor your servers by collecting metrics from the system and services running on the server.
-
-The configuration details of each machine may be found below. Note: Use the Markdown Table Generator to add/remove values from the table.
+The configuration details of each machine may be found below.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
@@ -48,6 +49,7 @@ My home IP address (100.7.126.87)
 
 Machines within the network can only be accessed by Local workstation and Jumpbox.
 
+The Jumpbox VW was allowed access to the ELK VM.
 Jumpbox VM: IP 10.0.0.8 Local Workstation via SSH IP 100.7.126.87
 
 A summary of the access policies in place can be found in the table below.
@@ -62,7 +64,7 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because the main advantage is that you can put commands into multiple servers from a single playbook, like how I combined Filebeat and Metricbeat.
+Ansible was used to automate configuration of the ELK machine. The playbook, much like the ones for Filebear and Metricbeat, saved time by not haivng to manually configure the machine.  
 
 The playbook implements the following tasks:
 
@@ -94,11 +96,9 @@ We have installed the following Beats on these machines:
 
 These Beats allow us to collect the following information from each machine:
 
-- Filebeat collects the changes done
-Diagrams/FileBeat.PNG
+- Filebeat can handle audit logs, deprecation logs, gc logs, server logs, and slow logs. 
 
-- Metricbeat collects metrics and statistics
-Diagrams/MetricBeat.PNG
+- Metricbeat collects machine metrics. For example, Metricbeat can be used to monitor and analyze system CPU, memory and load.
 
 ### Using the Playbook
 
@@ -107,11 +107,9 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 
 - Copy the playbook file to /etc/ansible .
-- Update the host file to include...
+- Update the host file to include the webservers and ELK server (and IP addresses).
 - Run the playbook, and navigate to command line to check that the installation worked as expected.
-- Playbook: install-elk.yml Location: /etc/ansible/install-elk.yml
-
-You would need to edit the /etc/ansible/host file to add webserver/elkserver ip addresses
+- Playbook: ELK_server.yml Location: /etc/ansible/ELK_server.yml
 
 /etc/ansible/hosts:
 
@@ -124,5 +122,7 @@ You would need to edit the /etc/ansible/host file to add webserver/elkserver ip 
 [elk]
 
 - 10.2.0.4 ansible_python_interpreter=/usr/bin/python3
+
+To check if the ELK server is running, the URL is: http://13.83.81.121:5601/app/kibana
 
 As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
