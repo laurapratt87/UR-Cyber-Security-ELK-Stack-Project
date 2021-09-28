@@ -4,11 +4,9 @@
 
 The files in this repository were used to configure the network depicted below.
 
-Diagrams/RedTeamVMDiagram.PNG
+![alt text](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Diagrams/ELK%20Diagram.jpg "ELK Diagram")
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
-
-/etc/ansible/ELK_Playbook.yml
 
 This document contains the following details:
 - Description of the Topology
@@ -64,6 +62,8 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because the playbook, much like the ones for Filebear and Metricbeat, saved time and remove [some] elements of human error.  
 
+[Link to Playbooks and Config Files](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/tree/main/Ansible)
+
 The playbook implements the following tasks:
 
 - Install docker.io
@@ -78,7 +78,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
-Diagrams/dockerps.PNG
+[Screenshot: docker ps](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Linux/docker%20elk%20sebp_elk_761.PNG)
 
 ### Target Machines & Beats
 
@@ -109,6 +109,10 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to command line to check that the installation worked as expected.
 - Playbook: ELK_server.yml Location: /etc/ansible/ELK_server.yml
 
+[ELK Playbook](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/ELK_Playbook.txt)
+
+[Ansible Host File](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/hosts.txt)
+
 /etc/ansible/hosts:
 
 [webservers]
@@ -124,19 +128,4 @@ SSH into the control node and follow the steps below:
 To check if the ELK server is running, the URL is: http://13.83.81.121:5601/app/kibana
 http://13.83.81.121/setup.php
 
-## Bonus
-
-The following are the specific commands the user will need. Some commands are written generally since the command would be dependent on specific information (username, IP, container name, etc.)
-
-- <sudo docker ps> will display which containers are present and running.
-- <sudo docker container start [container name]> will start the specified container. 
-  - Example: sudo docker container start relaxed kapitsa
-- <sudo docker container attach [container name]> will log the user into the specific container. 
-  - Example: sudo docker container start relaxed kapitsa
-- <ssh username@IP> will log a user into a new machine as long as it is running and allowing access. 
-  - Example: ssh sysadmin@10.2.0.4
-- <ansible-playbook [playbook name].yml> will run the playbook. 
-  - Example: ansible-playbook ELK-server.yml
-- <curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat >> /etc/ansible/filebeat-config.yml> will pull the Filebeat config file from the specified website.
-- the <nano> command was used to add/edit configuration files, playbooks, hosts, etc. 
-  - Example: nano ELK-server.yml
+[Link to Bonus: Commands](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Linux/Bonus)
