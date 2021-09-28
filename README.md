@@ -122,7 +122,7 @@ SSH into the control node and follow the steps below:
 - 10.2.0.4 ansible_python_interpreter=/usr/bin/python3
 
 To check if the ELK server is running, the URL is: http://13.83.81.121:5601/app/kibana
-http://13.83.81.121:5601/setup.php
+http://13.83.81.121/setup.php
 
 ## Bonus
 
