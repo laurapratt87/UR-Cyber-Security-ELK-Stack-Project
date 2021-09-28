@@ -78,7 +78,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
-Diagrams/dockerps.PNG
+[Screenshot: docker ps](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Linux/docker%20elk%20sebp_elk_761.PNG)
 
 ### Target Machines & Beats
 
@@ -108,6 +108,9 @@ SSH into the control node and follow the steps below:
 - Update the host file to include the webservers and ELK server (and IP addresses).
 - Run the playbook, and navigate to command line to check that the installation worked as expected.
 - Playbook: ELK_server.yml Location: /etc/ansible/ELK_server.yml
+[ELK Playbook](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/ELK_Playbook.txt)
+
+[Ansible Host File](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/hosts.txt)
 
 /etc/ansible/hosts:
 
