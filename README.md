@@ -93,16 +93,11 @@ This ELK server is configured to monitor the following machines:
 | Web-1    | Server   | 10.0.0.7   |
 | Web-2    | Server   | 10.0.0.6   |
 
-We have installed the following Beats on these machines:
+We have installed the two Beats on these machines  These Beats allow us to collect the following information from each machine:
 
-- Filebeat
-- Metricbeat
+- **Filebeat**: can handle audit logs, deprecation logs, gc logs, server logs, and slow logs. 
 
-These Beats allow us to collect the following information from each machine:
-
-- Filebeat can handle audit logs, deprecation logs, gc logs, server logs, and slow logs. 
-
-- Metricbeat collects machine metrics. For example, Metricbeat can be used to monitor and analyze system CPU, memory and load.
+- **Metricbeat**: collects machine metrics. For example, Metricbeat can be used to monitor and analyze system CPU, memory and load.
 
 ![alt text](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Additional%20Resources/heatmap.PNG "Heat Map")
 
