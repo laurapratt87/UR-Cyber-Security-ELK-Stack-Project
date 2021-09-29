@@ -138,5 +138,5 @@ SSH into the control node and follow the steps below:
 
 ## Group
 - [Josh Black](https://github.com/joshblack07)
-- [Laura Pratt](https://github.com/laurapratt87)
+- [Laura Pratt](https://github.com/laurapratt87) :sparkles:
 - [Courtney Templeton](https://github.com/cltempleton1127)
