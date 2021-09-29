@@ -119,20 +119,16 @@ There were four playbooks used when creating this network.
 
   - [Playbooks and Config Files](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/tree/main/Ansible)
   
-Since 'my-playbook' was the playbook created as part of the Cloud Security unit, it would need to be implemented first to have an Ansible control node configured. Assuming you have such a control node provisioned:
+Since [my-playbook](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/my-playbook.txt) was the playbook created as part of the Cloud Security unit, it would need to be implemented first to have an Ansible control node configured. Assuming you have such a control node provisioned:
 
 SSH into the control node and follow the steps below:
 
 - Copy the playbook file to /etc/ansible.
 - Update the host file to include the webservers and ELK server (and IP addresses).
 - Run the playbook, and navigate to command line to check that the installation worked as expected.
-- Playbook: ELK_server.yml Location: /etc/ansible/ELK_server.yml
+- Playbook: [ELK Playbook](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/ELK_Playbook.txt) Location: /etc/ansible/ELK_playbook.yml
 
-[ELK Playbook](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/ELK_Playbook.txt)
-
-The Ansible Host File is updated to include the two webservers and the elk server.
-
-- [Ansible Host File](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/hosts.txt)
+The [Ansible Host File](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/hosts.txt) is updated to include the two webservers and the elk server.
 
 [GitBash Steps to enable Kibana Dashboard](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Linux/GitBash%20Steps.md)
 
