@@ -74,7 +74,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 [Link to Playbooks and Config Files](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/tree/main/Ansible)
 
-|Playbook tasks    |
+|ELK_Playbook tasks    |
 |----------|
 | Install docker.io |
 | Install Python-pip  |
