@@ -50,7 +50,7 @@ The configuration details of each machine may be found below.
 
 The machines on the internal network are not exposed to the public Internet. Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
-My home IP address (100.7.126.87)
+- My home IP address (100.7.126.87)
 
 Machines within the network can only be accessed by Local workstation and Jumpbox.
 
@@ -102,6 +102,8 @@ These Beats allow us to collect the following information from each machine:
 - Filebeat can handle audit logs, deprecation logs, gc logs, server logs, and slow logs. 
 
 - Metricbeat collects machine metrics. For example, Metricbeat can be used to monitor and analyze system CPU, memory and load.
+
+
 
 ### Using the Playbook
 
