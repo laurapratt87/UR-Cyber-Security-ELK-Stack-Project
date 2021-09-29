@@ -4,23 +4,23 @@ This guide should help with step-by-step commands to SSH, start and attach conta
 
 - GitBash
 
-  - ssh redadmin@168.62.165.226
+  - `ssh redadmin@168.62.165.226`
 
-  - sudo docker container list -a
+  - `sudo docker container list -a`
 
-  - sudo docker container start relaxed_kapitsa
+  - `sudo docker container start relaxed_kapitsa`
 
-  - sudo docker container attach relaxed_kapitsa
+  - `sudo docker container attach relaxed_kapitsa`
 
-  - cd /etc/ansible 
+  - `cd /etc/ansible `
 
-  - ls
+  - `ls`
 
     - ELK_Playbook.yml	ansible.cfg	filebeat-config.yml	hosts	metricbeat-config.yml	metricbeat-playbook.yml	my-playbook.yml
 
-  - ssh sysadmin@10.2.0.4
+  - `ssh sysadmin@10.2.0.4`
 
-  - sudo docker container start elk
+  - `sudo docker container start elk`
 
   - http://13.83.81.121:5601/app/kibana#/home
 
