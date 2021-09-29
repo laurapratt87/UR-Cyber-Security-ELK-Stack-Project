@@ -6,6 +6,13 @@ The files in this repository were used to configure the network depicted below.
 
 ![alt text](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Diagrams/ELK_Diagram.jpg "ELK Diagram")
 
+I created an ELK stack that allows the automatation of monitoring the performance of multiple virtual machines in one database.  By using the ELK Server in conjunction with containers, the benefits are:
+
+  - Scalability and Elasticity
+  - Efficiency of Resources
+  - Increased Security
+  - App Isolation
+
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above, or select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
 This document contains the following details:
@@ -24,7 +31,7 @@ Load balancing ensures that the application will be highly efficient, in additio
 
 The Jump Box is a tool used to connect to devices within a security zone. Because it was set up with SSH Keys instead of passwords, it protects the machines from DDoS attacks.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system metrics and statistics.
+Integrating an ELK server allows users to easily monitor the webservers for changes to the logs and system metrics and statistics.
 
 Filebeat collects data about the file system. Metricbeat collects machine metrics, such as uptime. 
 
@@ -87,7 +94,6 @@ This ELK server is configured to monitor the following machines:
 We have installed the following Beats on these machines:
 
 - Filebeat and Metricbeat
-  - [Playbooks and Config Files](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/tree/main/Ansible)
 
 These Beats allow us to collect the following information from each machine:
 
@@ -97,7 +103,18 @@ These Beats allow us to collect the following information from each machine:
 
 ### Using the Playbook
 
-In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
+There were four playbooks used when creating this network.  
+
+| Playbook     | Action(s) |
+|----------|----------|
+| my-playbook | This is the initial playbook to add a container to the Jump Box and install docker.io, pip3, Docker python | 
+| ELK_playbook | This playbook increased the resources for the ELK server, add the container, and install docker.io, pip3, Docker python  | 
+| filebeat-playbook | This playbook pulled the download, config file, and .yml for Filebeat | 
+| metricbeat-playbook | This playbook pulled the download, config file, and .yml for Metricbeat  | 
+
+  - [Playbooks and Config Files](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/tree/main/Ansible)
+  
+Since 'my-playbook' was the playbook created as part of the Cloud Security unit, it would need to be implemented first to have an Ansible control node configured. Assuming you have such a control node provisioned:
 
 SSH into the control node and follow the steps below:
 
@@ -113,7 +130,6 @@ The Ansible Host File is updated to include the two webservers and the elk serve
 [Ansible Host File](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/hosts.txt)
 
 To check if the ELK server is running, the URL is: http://13.83.81.121:5601/app/kibana
-http://13.83.81.121/setup.php
 
 ## Bonus
 [Link to Bonus: Commands](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Linux/Bonus)
