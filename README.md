@@ -137,6 +137,6 @@ SSH into the control node and follow the steps below:
 [Link to Bonus: Commands](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Linux/Bonus.md)
 
 ## Group
-- Josh Black
-- Laura Pratt
-- Courtney Templeton
+- [Josh Black](https://github.com/joshblack07)
+- [Laura Pratt](https://github.com/laurapratt87)
+- [Courtney Templeton](https://github.com/cltempleton1127)
