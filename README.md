@@ -62,7 +62,7 @@ A summary of the access policies in place can be found in the table below.
 
 |   Name   | Publicly Accessible | Allowed IP Addresses  |
 |----------|---------------------|-----------------------|
-| Jump Box |        No           |      100.7.126.87     |
+| Jump Box |        Yes           |      100.7.126.87     |
 |   Web-1  |        No           |10.0.0.8|
 |   Web-2  |        No           |110.0.0.8|
 |ELK-Server|        No           |110.0.0.8|
@@ -94,7 +94,8 @@ This ELK server is configured to monitor the following machines:
 
 We have installed the following Beats on these machines:
 
-- Filebeat and Metricbeat
+- Filebeat
+- Metricbeat
 
 These Beats allow us to collect the following information from each machine:
 
