@@ -103,7 +103,9 @@ These Beats allow us to collect the following information from each machine:
 
 - Metricbeat collects machine metrics. For example, Metricbeat can be used to monitor and analyze system CPU, memory and load.
 
+![alt text](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Additional%20Resources/heatmap.PNG "Heat Map")
 
+![alt text](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Additional%20Resources/location.PNG "Location")
 
 ### Using the Playbook
 
