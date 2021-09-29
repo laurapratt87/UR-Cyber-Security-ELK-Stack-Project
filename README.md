@@ -64,12 +64,12 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 [Link to Playbooks and Config Files](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/tree/main/Ansible)
 
-The playbook implements the following tasks:
-
-- Install docker.io
-- Install Python-pip
-- Install: docker
-- Launch docker container: elk
+|Playbook tasks    |
+|----------|
+| Install docker.io |
+| Install Python-pip  |
+| Install: docker |
+|Launch docker container: elk|
 
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
