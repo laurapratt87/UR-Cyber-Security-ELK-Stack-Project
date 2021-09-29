@@ -81,7 +81,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 | Install: docker |
 |Launch docker container: elk|
 
-The following [screenshot](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Linux/docker%20elk%20sebp_elk_761.PNG) displays the result of running 'docker ps' after successfully configuring the ELK instance.
+The following [screenshot](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Linux/docker%20elk%20sebp_elk_761.PNG) displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 ### Target Machines & Beats
 
