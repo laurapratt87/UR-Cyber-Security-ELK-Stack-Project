@@ -1,4 +1,4 @@
-##Elk Commands and Steps
+## Elk Commands and Steps
 
 This guide should help with step-by-step commands to SSH, start and attach containers, and ultimately navigate to the Kibana Dashboard for the ELK server.
 
