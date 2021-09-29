@@ -134,4 +134,4 @@ SSH into the control node and follow the steps below:
 [URL to check if the ELK server is running](http://13.83.81.121:5601/app/kibana)
 
 ## Bonus
-[Link to Bonus: Commands](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Linux/Bonus)
+[Link to Bonus: Commands](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Linux/Bonus.md)
