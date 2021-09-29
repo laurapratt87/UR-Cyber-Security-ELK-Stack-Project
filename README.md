@@ -136,7 +136,7 @@ The Ansible Host File is updated to include the two webservers and the elk serve
 
 - [GitBash Steps to enable Kibana Dashboard](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Linux/GitBash%20Steps.md)
 
-To check if the ELK server is running, the URL is: http://13.83.81.121:5601/app/kibana
+[URL to check if the ELK server is running](http://13.83.81.121:5601/app/kibana)
 
 ## Bonus
 [Link to Bonus: Commands](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Linux/Bonus)
