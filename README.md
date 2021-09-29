@@ -53,7 +53,7 @@ The machines on the internal network are not exposed to the public Internet. Onl
 
 - My home IP address (100.7.126.87)
 
-Machines within the network can only be accessed by Local workstation and Jumpbox.
+Based on the SSH Keys, Network Security Groups, NSG security rules, machines within the network can only be accessed by Local workstation and Jumpbox.  
 
 The Jumpbox VM was allowed access to the ELK VM.
 
