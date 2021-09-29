@@ -112,10 +112,10 @@ There were four playbooks used when creating this network.
 
 | Playbook     | Action(s) |
 |----------|----------|
-| my-playbook | This is the initial playbook to add a container to the Jump Box and install docker.io, pip3, Docker python | 
-| ELK_playbook | This playbook increased the resources for the ELK server, add the container, and install docker.io, pip3, Docker python  | 
-| filebeat-playbook | This playbook pulled the download, config file, and .yml for Filebeat | 
-| metricbeat-playbook | This playbook pulled the download, config file, and .yml for Metricbeat  | 
+| [my-playbook](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/my-playbook.txt) | This is the initial playbook to add a container to the Jump Box and install docker.io, pip3, Docker python | 
+| [ELK Playbook](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/ELK_Playbook.txt) | This playbook increased the resources for the ELK server, add the container, and install docker.io, pip3, Docker python  | 
+| [filebeat-playbook](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/filebeat-playbook.txt) | This playbook pulled the download, config file, and .yml for Filebeat | 
+| [metricbeat-playbook](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/filebeat-playbook.txt | This playbook pulled the download, config file, and .yml for Metricbeat  | 
 
   - [Playbooks and Config Files](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/tree/main/Ansible)
   
