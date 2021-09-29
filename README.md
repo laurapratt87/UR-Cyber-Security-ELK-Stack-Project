@@ -103,6 +103,9 @@ We have installed the two Beats on these machines  These Beats allow us to colle
 
 ![alt text](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Additional%20Resources/location.PNG "Location")
 
+The Kibana dashboard provides lots of system information, including: heatmap, sankey chart, response codes, unique visitors, total requests, etc. 
+These data points are helpful for things like a [Kibana Exploration Activity](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Additional%20Resources/Kibana%20Exploration.docx)
+
 ### Using the Playbook
 
 There were four playbooks used when creating this network.  
