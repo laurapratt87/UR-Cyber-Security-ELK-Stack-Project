@@ -56,6 +56,7 @@ The machines on the internal network are not exposed to the public Internet. Onl
 Machines within the network can only be accessed by Local workstation and Jumpbox.
 
 The Jumpbox VM was allowed access to the ELK VM.
+
 Jumpbox VM: IP 10.0.0.8 Local Workstation via SSH IP 100.7.126.87
 
 A summary of the access policies in place can be found in the table below.
