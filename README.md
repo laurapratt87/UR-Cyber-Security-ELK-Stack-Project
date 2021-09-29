@@ -1,4 +1,4 @@
-# UR-Cyber-Security-ELK-Stack-Project 
+# University of Richmond Cybersecurity ELK Stack Project 
 
 ## Automated ELK Stack Deployment
 
