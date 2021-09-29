@@ -69,9 +69,7 @@ The playbook implements the following tasks:
 - Install docker.io
 - Install Python-pip
 - Install: docker
-- Command: sysctl -w vm.max_map_count=262144
 - Launch docker container: elk
-- name: download and launch a docker elk container docker_container: name: elk image: sebp/elk:761 state: started restart_policy: always published_ports: - - 5601:5601 - 9200:9200 - 5044:5044
 
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
@@ -88,6 +86,7 @@ This ELK server is configured to monitor the following machines:
 We have installed the following Beats on these machines:
 
 - Filebeat and Metricbeat
+  - [Playbooks and Config Files](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/tree/main/Ansible)
 
 These Beats allow us to collect the following information from each machine:
 
@@ -101,28 +100,19 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 
-- Copy the playbook file to /etc/ansible .
+- Copy the playbook file to /etc/ansible.
 - Update the host file to include the webservers and ELK server (and IP addresses).
 - Run the playbook, and navigate to command line to check that the installation worked as expected.
 - Playbook: ELK_server.yml Location: /etc/ansible/ELK_server.yml
 
 [ELK Playbook](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/ELK_Playbook.txt)
 
+The Ansible Host File is updated to include the two webservers and the elk server.
+
 [Ansible Host File](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Ansible/hosts.txt)
-
-/etc/ansible/hosts:
-
-[webservers]
-
-- 10.0.0.7 ansible_python_interpreter=/usr/bin/python3
-
-- 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
-
-[elk]
-
-- 10.2.0.4 ansible_python_interpreter=/usr/bin/python3
 
 To check if the ELK server is running, the URL is: http://13.83.81.121:5601/app/kibana
 http://13.83.81.121/setup.php
 
+## Bonus
 [Link to Bonus: Commands](https://github.com/joshblack07/UR-Cyber-Security-ELK-Stack-Project/blob/main/Linux/Bonus)
